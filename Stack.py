@@ -18,6 +18,12 @@ class Stack:
             self.top = current.next
             current.next = None
     
+    def isEmpty( self ):
+        if self.top == None:
+            return True
+        else:
+            return False
+
     def printStack( self ):
         current = self.top
         while current != None:
